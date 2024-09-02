@@ -8,4 +8,5 @@ export const colors = {
     buttonBackground: "#FED36A",
     input: "#FFFFFF",
     inputBackground: "#455A64",
+    bottomTabs: "#263238"
 }
