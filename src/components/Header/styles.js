@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
         height: vs(56),
         flexDirection: "row",
         alignItems: "center",
-        paddingHorizontal: s(spacing.lg)
+        paddingHorizontal: s(spacing.md)
     },
     centerContainer: {
         flex: 1,

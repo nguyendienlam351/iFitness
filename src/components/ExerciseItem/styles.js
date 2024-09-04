@@ -1,14 +1,14 @@
 import { StyleSheet } from "react-native";
 import { ms, s, vs } from "react-native-size-matters";
 import { colors } from "../../constants/colors";
-import { fontSize, spacing } from "../../constants/dimensions";
 import { fontFamilies } from "../../constants/fonts";
+import { fontSize, spacing } from "../../constants/dimensions";
 
 
 export const styles = StyleSheet.create({
     container: {
         backgroundColor: colors.secondary,
-        height: vs(72),
+        height: vs(60),
         flexDirection: "row",
         paddingRight: s(spacing.md),
         marginBottom: vs(spacing.md)
@@ -25,33 +25,26 @@ export const styles = StyleSheet.create({
     title: {
         color: colors.textPrimary,
         fontFamily: fontFamilies.medium,
-        fontSize: ms(fontSize.lg),
-        height: "45%",
+        fontSize: ms(fontSize.md),
+        height: "55%",
     },
-    description: {
+    sets: {
         color: colors.textSecondary,
         fontFamily: fontFamilies.regular,
         fontSize: ms(fontSize.sm),
-        height: "55%"
+        height: "45%"
     },
-    sessions: {
-        height: ms(68),
-        width: ms(68),
-        alignItems: "center",
-        justifyContent: "center",
-        borderRadius: ms(34),
-        borderWidth: ms(3),
-        borderColor: colors.primary,
-        alignSelf: "center",
+    durationContainer: {
+        justifyContent: "center"
     },
-    sessionsNum: {
-        color: colors.textPrimary,
-        fontFamily: fontFamilies.medium,
-        fontSize: ms(fontSize.md)
+    duration: {
+        flexDirection: "row",
+
     },
-    sessionsText: {
+    durationText: {
         color: colors.textSecondary,
         fontFamily: fontFamilies.regular,
-        fontSize: ms(fontSize.sm)
+        fontSize: ms(fontSize.sm),
+        marginLeft: s(spacing.xm)
     }
 })

@@ -2,9 +2,9 @@ import { Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { styles } from './styles'
 
-const WorkoutSessionItem = () => {
+const WorkoutSessionItem = ({ onPress }) => {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             <View style={styles.line} />
             <View style={styles.contentContainer}>
                 <Text style={styles.title} numberOfLines={1}>Buổi đẩy</Text>

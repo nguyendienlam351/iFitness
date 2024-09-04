@@ -51,7 +51,7 @@ export default BottomTabsNavigator
 
 const styles = StyleSheet.create({
     tabBarStyle: {
-        backgroundColor: colors.bottomTabs,
+        backgroundColor: colors.backgroundSecondary,
         height: vs(60),
         borderTopWidth: 0
     }
