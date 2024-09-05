@@ -18,7 +18,7 @@ const HomeScreen = ({ navigation }) => {
             <View style={styles.contentContainer}>
                 {/* workout session list */}
                 <View style={styles.headerListContainer}>
-                    <Text style={styles.headerListTitle}>Workout sessions</Text>
+                    <Text style={styles.headerListTitle}>Workout Sessions</Text>
                     <TouchableOpacity>
                         <Text style={styles.headerListLink}>See all</Text>
                     </TouchableOpacity>

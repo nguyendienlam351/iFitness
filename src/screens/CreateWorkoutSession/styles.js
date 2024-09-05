@@ -45,7 +45,8 @@ export const styles = StyleSheet.create({
         textAlignVertical: "top",
     },
     buttonContainer: {
-        flexDirection: "row"
+        flexDirection: "row",
+        gap: s(spacing.sm)
     },
     cancelButton: {
         flex: 1,
@@ -71,7 +72,4 @@ export const styles = StyleSheet.create({
         fontFamily: fontFamilies.semiBold,
         fontSize: ms(fontSize.lg),
     },
-    spacing: {
-        width: s(spacing.sm)
-    }
 })

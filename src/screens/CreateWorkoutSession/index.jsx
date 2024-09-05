@@ -52,7 +52,6 @@ const CreateWorkoutSession = ({ navigation }) => {
                     <TouchableOpacity style={styles.cancelButton}>
                         <Text style={styles.cancelText}>Cancel</Text>
                     </TouchableOpacity>
-                    <View style={styles.spacing} />
                     <TouchableOpacity style={styles.saveButton}>
                         <Text style={styles.saveText}>Save</Text>
                     </TouchableOpacity>

@@ -6,9 +6,9 @@ import { iconSize } from '../../constants/dimensions'
 import { colors } from '../../constants/colors'
 import { ms } from 'react-native-size-matters'
 
-const ExerciseItem = () => {
+const ExerciseItem = ({ onPress }) => {
     return (
-        <TouchableOpacity style={styles.container} >
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             <View style={styles.line} />
             <View style={styles.contentContainer}>
                 <Text style={styles.title} numberOfLines={2}>Diamond Pushup sdfsdf sdfs df sfs sdf  sfsfsdfsd</Text>

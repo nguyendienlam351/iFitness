@@ -67,7 +67,7 @@ const WorkoutSession = ({ navigation }) => {
                         </TouchableOpacity>
                     </View>
 
-                    <ExerciseItem />
+                    <ExerciseItem onPress={() => navigation.navigate("Exercise")} />
                     <ExerciseItem />
                     <ExerciseItem />
                     <ExerciseItem />
