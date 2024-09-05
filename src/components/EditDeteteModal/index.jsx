@@ -2,7 +2,7 @@ import { Modal, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { styles } from './styles'
 
-const EditDeleteModal = ({ modalVisible, setModalVisible }) => {
+const EditDeleteModal = ({ modalVisible, setModalVisible, onPressEdit, onPressDelete }) => {
     return (
         <Modal
             animationType="fade"
@@ -15,7 +15,7 @@ const EditDeleteModal = ({ modalVisible, setModalVisible }) => {
                 <View style={styles.modalView}>
                     <Text style={styles.modalTitle}>Do you want to?</Text>
 
-                    <TouchableOpacity style={styles.editContainer}>
+                    <TouchableOpacity style={styles.editContainer} onPress={onPressEdit}>
                         <Text style={styles.editText}>Edit</Text>
                     </TouchableOpacity>
 
@@ -25,7 +25,7 @@ const EditDeleteModal = ({ modalVisible, setModalVisible }) => {
                         <View style={styles.orLine} />
                     </View>
 
-                    <TouchableOpacity style={styles.deleteContainer}>
+                    <TouchableOpacity style={styles.deleteContainer} onPress={onPressDelete}>
                         <Text style={styles.deleteText}>Delete</Text>
                     </TouchableOpacity>
                 </View>

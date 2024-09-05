@@ -16,11 +16,11 @@ const YesNoModal = ({ modalVisible, setModalVisible, title, yesTitle, noTitle, o
                     <Text style={styles.modalTitle} numberOfLines={1}>{title}</Text>
                     <View style={styles.buttonContainer}>
                         <TouchableOpacity style={styles.noContainer} onPress={onPressNo}>
-                            <Text style={styles.noText} numberOfLines={1}>{yesTitle}</Text>
+                            <Text style={styles.noText} numberOfLines={1}>{noTitle}</Text>
                         </TouchableOpacity>
                         <View style={styles.spacing} />
                         <TouchableOpacity style={styles.yesContainer}>
-                            <Text style={styles.yesText} numberOfLines={1}>{noTitle}</Text>
+                            <Text style={styles.yesText} numberOfLines={1}>{yesTitle}</Text>
                         </TouchableOpacity>
                     </View>
                 </View>

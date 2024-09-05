@@ -13,7 +13,11 @@ export const styles = StyleSheet.create({
     },
     contentContainer: {
         flex: 1,
-        paddingHorizontal: s(spacing.md)
+        paddingHorizontal: s(spacing.md),
+        paddingVertical: vs(spacing.md)
+    },
+    content: {
+        flex: 1,
     },
     title: {
         color: colors.textPrimary,
@@ -39,17 +43,13 @@ export const styles = StyleSheet.create({
     },
     headerListTitle: {
         color: colors.button,
-        fontFamily: fontFamilies.medium,
+        fontFamily: fontFamilies.semiBold,
         fontSize: ms(fontSize.lg),
     },
     startButton: {
         backgroundColor: colors.buttonBackground,
         alignItems: "center",
         padding: vs(spacing.sm),
-        position: "absolute",
-        bottom: s(spacing.md),
-        left: s(spacing.md),
-        right: s(spacing.md),
     },
     startButtonTitle: {
         color: colors.button,

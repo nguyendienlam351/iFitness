@@ -9,4 +9,7 @@ export const colors = {
     buttonBackground: "#FED36A",
     input: "#FFFFFF",
     inputBackground: "#455A64",
+    success: "#008B28",
+    warning: "#DA8F1E",
+    error: "#DA1E28"
 }

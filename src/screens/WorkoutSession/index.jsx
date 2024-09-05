@@ -12,7 +12,7 @@ import YesNoModal from '../../components/YesNoModal'
 
 const WorkoutSession = ({ navigation }) => {
     const [editDeleteModal, setEditDeleteModal] = useState(false);
-    const [deleteModal, setDeleteModal] = useState(true);
+    const [deleteModal, setDeleteModal] = useState(false);
 
     const goBack = () => {
         navigation.goBack()
@@ -22,16 +22,19 @@ const WorkoutSession = ({ navigation }) => {
         setEditDeleteModal(!editDeleteModal)
     }
 
+    const onPressEdit = () => {
+        setEditDeleteModal(false)
+        navigation.navigate("CreateWorkoutSession")
+    }
+
+    const onPressDelete = () => {
+        setEditDeleteModal(false)
+        setDeleteModal(true)
+    }
+
     return (
         <View style={styles.container}>
-            <EditDeleteModal modalVisible={editDeleteModal} setModalVisible={setEditDeleteModal} />
-            <YesNoModal
-                modalVisible={deleteModal}
-                setModalVisible={setDeleteModal}
-                title={"Do you want to detele?"}
-                noTitle={"Cancel"}
-                yesTitle={"Delete"}
-                onPressNo={() => setDeleteModal(!deleteModal)} />
+            {/* header */}
             <Header
                 leftComponent={
                     <TouchableOpacity onPress={goBack} >
@@ -46,32 +49,49 @@ const WorkoutSession = ({ navigation }) => {
                 headerTitle={"Workout Session"} />
 
             <View style={styles.contentContainer}>
-                {/* title and description */}
-                <Text style={styles.title} numberOfLines={2}>Lorem Ipsum is simply dummy </Text>
-                <Text style={styles.description} numberOfLines={6}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                </Text>
+                <View style={styles.content}>
+                    {/* title and description */}
+                    <Text style={styles.title} numberOfLines={2}>Lorem Ipsum is simply dummy </Text>
+                    <Text style={styles.description} numberOfLines={8}>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </Text>
 
-                {/* exercises list  */}
-                <View style={styles.headerListContainer}>
-                    <Text style={styles.headerListTitle}>Exercises</Text>
-                    <TouchableOpacity>
-                        <MaterialCommunityIcons name="plus" size={ms(iconSize.md)} color={colors.button} />
-                    </TouchableOpacity>
+                    {/* exercises list  */}
+                    <View style={styles.headerListContainer}>
+                        <Text style={styles.headerListTitle}>Exercises</Text>
+                        <TouchableOpacity>
+                            <MaterialCommunityIcons name="plus" size={ms(iconSize.md)} color={colors.button} />
+                        </TouchableOpacity>
+                    </View>
+
+                    <ExerciseItem />
+                    <ExerciseItem />
+                    <ExerciseItem />
+                    <ExerciseItem />
                 </View>
-
-                <ExerciseItem />
-                <ExerciseItem />
-                <ExerciseItem />
-                <ExerciseItem />
-
                 {/* start button */}
-
                 <TouchableOpacity style={styles.startButton}>
                     <Text style={styles.startButtonTitle}>Start</Text>
                 </TouchableOpacity>
             </View>
+
+            {/* modal */}
+            <EditDeleteModal
+                modalVisible={editDeleteModal}
+                setModalVisible={setEditDeleteModal}
+                onPressEdit={onPressEdit}
+                onPressDelete={onPressDelete} />
+            <YesNoModal
+                modalVisible={deleteModal}
+                setModalVisible={setDeleteModal}
+                title={"Do you want to detele?"}
+                noTitle={"Cancel"}
+                yesTitle={"Delete"}
+                onPressNo={() => setDeleteModal(!deleteModal)} />
+
         </View>
     )
 }

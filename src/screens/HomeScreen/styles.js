@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
     headerListTitle: {
         color: colors.button,
         fontFamily: fontFamilies.semiBold,
-        fontSize: ms(fontSize.xl)
+        fontSize: ms(fontSize.lg)
     },
     headerListLink: {
         color: colors.button,
