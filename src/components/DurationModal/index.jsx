@@ -2,13 +2,15 @@ import { Modal, Text, TouchableOpacity, View, TextInput } from 'react-native'
 import React from 'react'
 import { styles } from './styles'
 
-const DurationModal = () => {
+const DurationModal = ({ modalVisible, setModalVisible, }) => {
+
     return (
         <Modal
             animationType="fade"
             transparent={true}
-            visible={true}
+            visible={modalVisible}
             onRequestClose={() => {
+                setModalVisible(!modalVisible);
             }}>
             <View style={styles.container}>
                 <View style={styles.modalContainer}>

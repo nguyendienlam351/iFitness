@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     durationContainer: {
         flexDirection: "row",
         gap: s(spacing.md),
-        marginBottom: vs(spacing.sm)
+        marginBottom: vs(spacing.md)
     },
     duration: {
         flex: 1,
