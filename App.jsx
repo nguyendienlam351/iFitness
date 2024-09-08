@@ -1,8 +1,6 @@
-import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import BootSplash from 'react-native-bootsplash'
 import { NavigationContainer } from '@react-navigation/native';
-import BottomTabsNavigator from './src/navigation/BottomTabsNavigator';
 import StackNavigator from './src/navigation/StackNavigator';
 
 const App = () => {

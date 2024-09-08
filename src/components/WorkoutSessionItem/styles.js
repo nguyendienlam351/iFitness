@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
         height: vs(72),
         flexDirection: "row",
         paddingRight: s(spacing.md),
-        marginBottom: vs(spacing.md)
+        marginBottom: vs(spacing.sm)
     },
     line: {
         backgroundColor: colors.primary,

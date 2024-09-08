@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     modalTitle: {
         color: colors.textPrimary,
         fontFamily: fontFamilies.medium,
-        fontSize: ms(fontSize.md),
+        fontSize: ms(fontSize.lg),
         alignSelf: "center",
         marginBottom: vs(spacing.md)
     },

@@ -1,22 +1,19 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../constants/colors";
+import { fontSize, spacing } from "../../constants/dimensions";
 import { ms, s, vs } from "react-native-size-matters";
-import { fontSize, iconSize, spacing } from "../../constants/dimensions";
 import { fontFamilies } from "../../constants/fonts";
+
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colors.background,
-    },
-    appIcon: {
-        height: ms(iconSize.lg),
-        width: ms(iconSize.lg),
-        resizeMode: "cover"
+        backgroundColor: colors.background
     },
     contentContainer: {
         flex: 1,
-        paddingHorizontal: s(spacing.md)
+        paddingHorizontal: s(spacing.md),
+        paddingVertical: vs(spacing.md)
     },
     headerListContainer: {
         flexDirection: "row",
@@ -30,11 +27,6 @@ export const styles = StyleSheet.create({
     headerListTitle: {
         color: colors.button,
         fontFamily: fontFamilies.semiBold,
-        fontSize: ms(fontSize.lg)
+        fontSize: ms(fontSize.lg),
     },
-    headerListLink: {
-        color: colors.button,
-        fontFamily: fontFamilies.regular,
-        fontSize: ms(fontSize.sm)
-    }
 })

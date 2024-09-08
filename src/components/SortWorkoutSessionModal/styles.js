@@ -24,32 +24,36 @@ export const styles = StyleSheet.create({
         alignSelf: "center",
         marginBottom: vs(spacing.md)
     },
-    buttonContainer: {
+    contentContainer: {
+        marginBottom: vs(spacing.sm),
+        paddingHorizontal: s(spacing.md)
+    },
+    itemContainer: {
         flexDirection: "row",
+        alignItems: "center",
+        marginBottom: vs(spacing.sm),
+        gap: s(spacing.md)
+    },
+    itemTitleContainer: {
+        flexDirection: "row",
+        alignItems: "center",
         gap: s(spacing.sm)
     },
-    noContainer: {
-        flex: 1,
+    itemTitle: {
+        color: colors.textSecondary,
+        fontFamily: fontFamilies.regular,
+        fontSize: ms(fontSize.md),
+    },
+    cancelContainer: {
         backgroundColor: colors.backgroundSecondary,
         alignItems: "center",
         padding: vs(spacing.sm),
         borderWidth: ms(2),
         borderColor: colors.input
     },
-    noText: {
+    cancelText: {
         color: colors.input,
         fontFamily: fontFamilies.semiBold,
         fontSize: ms(fontSize.lg),
     },
-    yesContainer: {
-        flex: 1,
-        backgroundColor: colors.buttonBackground,
-        alignItems: "center",
-        padding: vs(spacing.sm),
-    },
-    yesText: {
-        color: colors.button,
-        fontFamily: fontFamilies.semiBold,
-        fontSize: ms(fontSize.lg),
-    }
 })

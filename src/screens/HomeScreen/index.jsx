@@ -7,6 +7,11 @@ import WorkoutSessionItem from '../../components/WorkoutSessionItem'
 const appIconUrl = "../../../assets/appIcon/appIcon.png"
 
 const HomeScreen = ({ navigation }) => {
+
+    const onPressSeeAll = () => {
+        navigation.navigate("SearchWorkoutSession")
+    }
+
     return (
         <View style={styles.container}>
             {/* header */}
@@ -19,7 +24,7 @@ const HomeScreen = ({ navigation }) => {
                 {/* workout session list */}
                 <View style={styles.headerListContainer}>
                     <Text style={styles.headerListTitle}>Workout Sessions</Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={onPressSeeAll}>
                         <Text style={styles.headerListLink}>See all</Text>
                     </TouchableOpacity>
                 </View>

@@ -22,10 +22,8 @@ export const styles = StyleSheet.create({
         alignItems: "center"
     },
     repContainer: {
-        // backgroundColor: "blue",
         width: "45%",
         flexDirection: "row",
-        alignItems: "center"
     },
     repsValue: {
         color: colors.input,
@@ -33,14 +31,9 @@ export const styles = StyleSheet.create({
         fontSize: ms(fontSize.xl * 2),
     },
     repsText: {
-        color: colors.textPrimary,
-        fontFamily: fontFamilies.regular,
-        fontSize: ms(fontSize.sm),
-        padding: s(spacing.xm),
-        borderWidth: 2,
-        borderColor: colors.textSecondary,
-        textAlign: "center",
-        borderRadius: 10
+        color: colors.input,
+        fontFamily: fontFamilies.semiBold,
+        fontSize: ms(fontSize.xl * 2),
     },
     weightContainer: {
         // backgroundColor: "yellow",

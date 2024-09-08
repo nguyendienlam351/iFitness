@@ -16,11 +16,11 @@ const ExerciseItem = ({ onPress }) => {
             </View>
             <View style={styles.durationContainer}>
                 <View style={styles.duration}>
-                    <MaterialCommunityIcons name="motion-pause-outline" size={ms(iconSize.sm)} color={colors.textSecondary} />
+                    <MaterialCommunityIcons name="motion-pause-outline" size={ms(iconSize.sm)} color={colors.primary} />
                     <Text style={styles.durationText}>2m30s</Text>
                 </View >
                 <View style={styles.duration}>
-                    <MaterialCommunityIcons name="motion-play-outline" size={ms(iconSize.sm)} color={colors.textSecondary} />
+                    <MaterialCommunityIcons name="motion-play-outline" size={ms(iconSize.sm)} color={colors.primary} />
                     <Text style={styles.durationText}>none</Text>
                 </View >
             </View>

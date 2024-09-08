@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     },
     title: {
         color: colors.textPrimary,
-        fontFamily: fontFamilies.regular,
+        fontFamily: fontFamilies.medium,
         fontSize: ms(fontSize.lg),
         alignSelf: "center",
         marginBottom: vs(spacing.md)

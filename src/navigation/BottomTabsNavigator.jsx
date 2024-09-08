@@ -5,6 +5,7 @@ import { colors } from '../constants/colors';
 import { StyleSheet } from 'react-native';
 import { s, vs, ms } from 'react-native-size-matters';
 import { iconSize } from '../constants/dimensions';
+import SearchWorkoutSession from '../screens/SearchWorkoutSession';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,10 +30,10 @@ const BottomTabsNavigator = () => {
                 }} />
             <Tab.Screen
                 name="History"
-                component={HomeScreen}
+                component={SearchWorkoutSession}
                 options={{
                     tabBarIcon: ({ color }) => (
-                        <MaterialCommunityIcons name="clipboard-text-clock" color={color} size={ms(iconSize.md)} />
+                        <MaterialCommunityIcons name="view-list" color={color} size={ms(iconSize.md)} />
                     ),
                 }} />
             <Tab.Screen

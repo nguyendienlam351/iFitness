@@ -14,7 +14,7 @@ const SetItem = () => {
             <View style={styles.line} />
             <View style={styles.contentContainer}>
                 <View style={styles.repContainer}>
-                    <Text style={styles.repsValue}>40</Text>
+                    <Text style={styles.repsValue}>40/20</Text>
                     <Text style={styles.repsText}>Reps</Text>
                 </View>
                 <View style={styles.weightContainer}>
