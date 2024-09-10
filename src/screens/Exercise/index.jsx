@@ -84,6 +84,9 @@ const Exercise = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
                 <SetItem />
+                <SetItem />
+                <SetItem />
+                <SetItem />
             </View>
 
             {/* duration */}

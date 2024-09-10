@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.buttonBackground,
         paddingHorizontal: s(spacing.md),
         paddingVertical: vs(spacing.sm),
-        marginBottom: vs(spacing.md)
+        marginBottom: vs(spacing.sm)
     },
     headerListTitle: {
         color: colors.button,

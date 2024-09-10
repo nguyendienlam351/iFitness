@@ -24,15 +24,17 @@ export const styles = StyleSheet.create({
     },
     title: {
         color: colors.textPrimary,
-        fontFamily: fontFamilies.medium,
+        fontFamily: fontFamilies.semiBold,
         fontSize: ms(fontSize.lg),
-        height: "45%",
+        height: "40%",
+        textAlignVertical: "center"
     },
     description: {
         color: colors.textSecondary,
         fontFamily: fontFamilies.regular,
         fontSize: ms(fontSize.sm),
-        height: "55%"
+        height: "60%",
+        textAlignVertical: "center"
     },
     sessions: {
         height: ms(68),

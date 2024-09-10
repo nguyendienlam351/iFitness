@@ -24,15 +24,17 @@ export const styles = StyleSheet.create({
     },
     title: {
         color: colors.textPrimary,
-        fontFamily: fontFamilies.medium,
+        fontFamily: fontFamilies.semiBold,
         fontSize: ms(fontSize.md),
-        height: "55%",
+        height: "60%",
+        textAlignVertical: "center"
     },
     sets: {
         color: colors.textSecondary,
         fontFamily: fontFamilies.regular,
-        fontSize: ms(fontSize.sm),
-        height: "45%"
+        fontSize: ms(fontSize.md),
+        height: "40%",
+        textAlignVertical: "center"
     },
     durationContainer: {
         justifyContent: "center"

@@ -1,7 +1,7 @@
 export const fontFamilies = {
-    bold: "Inter-Bold",
-    light: "Inter-Light",
-    medium: "Inter-Medium",
-    regular: "Inter-Regular",
-    semiBold: "Inter-SemiBold"
+    bold: "OpenSans-Bold",
+    light: "OpenSans-Light",
+    medium: "OpenSans-Medium",
+    regular: "OpenSans-Regular",
+    semiBold: "OpenSans-SemiBold"
 }

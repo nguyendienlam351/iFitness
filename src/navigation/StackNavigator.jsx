@@ -11,6 +11,7 @@ const StackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={{
       headerShown: false,
+      orientation: 'portrait'
     }}>
       <Stack.Screen name="BottomTabsNavigator" component={BottomTabsNavigator} />
       <Stack.Screen name="WorkoutSession" component={WorkoutSession} />

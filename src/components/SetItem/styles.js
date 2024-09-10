@@ -8,37 +8,57 @@ import { fontFamilies } from "../../constants/fonts";
 export const styles = StyleSheet.create({
     container: {
         backgroundColor: colors.secondary,
-        height: vs(50),
+        height: vs(55),
         flexDirection: "row",
-        marginBottom: vs(spacing.md)
+        marginBottom: vs(spacing.sm),
     },
     line: {
         backgroundColor: colors.primary,
         width: s(spacing.sm)
     },
     contentContainer: {
+        flex: 1,
         paddingHorizontal: s(spacing.md),
         flexDirection: "row",
-        alignItems: "center"
+        alignItems: "center",
+        gap: s(spacing.lg)
     },
     repContainer: {
-        width: "45%",
-        flexDirection: "row",
+        flex: 1,
+        justifyContent: "center",
     },
     repsValue: {
-        color: colors.input,
+        color: colors.textPrimary,
         fontFamily: fontFamilies.semiBold,
-        fontSize: ms(fontSize.xl * 2),
+        fontSize: ms(fontSize.xl),
     },
     repsText: {
-        color: colors.input,
-        fontFamily: fontFamilies.semiBold,
-        fontSize: ms(fontSize.xl * 2),
+        color: colors.textSecondary,
+        fontFamily: fontFamilies.medium,
+        fontSize: ms(fontSize.md),
+    },
+    line2: {
+        backgroundColor: colors.backgroundSecondary,
+        width: s(spacing.xm),
+        height: "70%"
     },
     weightContainer: {
-        // backgroundColor: "yellow",
-        width: "55%",
+        flex: 1,
+        justifyContent: "center",
+    },
+    weightValueContainer: {
         flexDirection: "row",
+        gap: s(spacing.xm),
         alignItems: "center"
+    },
+    weighValue: {
+        color: colors.textPrimary,
+        fontFamily: fontFamilies.medium,
+        fontSize: ms(fontSize.xl),
+    },
+    weighText: {
+        color: colors.textSecondary,
+        fontFamily: fontFamilies.regular,
+        fontSize: ms(fontSize.md),
     }
 })

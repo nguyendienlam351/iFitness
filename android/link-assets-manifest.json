@@ -2,24 +2,24 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Inter-Bold.otf",
-      "sha1": "892e9a770a5340e46c9c7d9f25fa2699d9275923"
+      "path": "assets/fonts/OpenSans-Bold.ttf",
+      "sha1": "b7f844e3fbc592719750956a7e9a19f0ede62c78"
     },
     {
-      "path": "assets/fonts/Inter-Light.otf",
-      "sha1": "c89f3036b53490be4b25d15e9a3cd4caf3e67d0c"
+      "path": "assets/fonts/OpenSans-Light.ttf",
+      "sha1": "bef371c2ba3ac8cc2ef276a65cc3be46414d1ffd"
     },
     {
-      "path": "assets/fonts/Inter-Medium.otf",
-      "sha1": "279fa3c60d682531d549d0ec9ed91f1b83402d40"
+      "path": "assets/fonts/OpenSans-Medium.ttf",
+      "sha1": "71e723b6f61cd4034b2bd373f3f346a7d8680ec2"
     },
     {
-      "path": "assets/fonts/Inter-Regular.otf",
-      "sha1": "4786a0feb4c853189782709a5ac5b5dfb696942b"
+      "path": "assets/fonts/OpenSans-Regular.ttf",
+      "sha1": "b334209f43426374b709e42e3185dc46478a96ba"
     },
     {
-      "path": "assets/fonts/Inter-SemiBold.otf",
-      "sha1": "ce2ccd0b91ffb1f8c894b6d60f21443e0769217c"
+      "path": "assets/fonts/OpenSans-SemiBold.ttf",
+      "sha1": "45974cf9acbd1be118f2b426c7cfab33ee584e3c"
     }
   ]
 }

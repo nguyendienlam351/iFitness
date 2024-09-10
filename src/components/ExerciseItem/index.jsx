@@ -11,7 +11,7 @@ const ExerciseItem = ({ onPress }) => {
         <TouchableOpacity style={styles.container} onPress={onPress}>
             <View style={styles.line} />
             <View style={styles.contentContainer}>
-                <Text style={styles.title} numberOfLines={2}>Diamond Pushup sdfsdf sdfs df sfs sdf  sfsfsdfsd</Text>
+                <Text style={styles.title} numberOfLines={2}>Diamond Pushup fsf sdfsf sfsdf sfdsf sff </Text>
                 <Text style={styles.sets} numberOfLines={1}>Sets: 5</Text>
             </View>
             <View style={styles.durationContainer}>
