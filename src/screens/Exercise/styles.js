@@ -20,40 +20,14 @@ export const styles = StyleSheet.create({
         color: colors.textPrimary,
         fontFamily: fontFamilies.regular,
         fontSize: ms(fontSize.lg),
-        marginBottom: vs(spacing.sm)
+        marginBottom: vs(spacing.md)
     },
     durationContainer: {
         flexDirection: "row",
         gap: s(spacing.md),
         marginBottom: vs(spacing.md)
     },
-    duration: {
-        flex: 1,
-    },
-    durationTitle: {
-        color: colors.textPrimary,
-        fontFamily: fontFamilies.regular,
-        fontSize: ms(fontSize.md),
-        marginBottom: vs(spacing.xm)
-    },
-    durationButton: {
-        backgroundColor: colors.secondary,
-        flexDirection: "row",
-    },
-    durationIcon: {
-        padding: ms(spacing.sm),
-        backgroundColor: colors.buttonBackground
-    },
-    durationTextContainer: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    durationValue: {
-        color: colors.textPrimary,
-        fontFamily: fontFamilies.medium,
-        fontSize: ms(fontSize.lg),
-    },
+
     headerListContainer: {
         flexDirection: "row",
         alignItems: "flex-end",

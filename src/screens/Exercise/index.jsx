@@ -9,6 +9,7 @@ import { colors } from '../../constants/colors'
 import DurationModal from '../../components/DurationModal'
 import SetItem from '../../components/SetItem'
 import EditDeleteModal from '../../components/EditDeteteModal'
+import DurationButton from '../../components/DurationButton'
 
 const Exercise = ({ navigation }) => {
     const [durationModal, setDurationModal] = useState(false);
@@ -51,29 +52,17 @@ const Exercise = ({ navigation }) => {
 
                 {/* duration */}
                 <View style={styles.durationContainer}>
-                    <View style={styles.duration}>
-                        <Text style={styles.durationTitle}>Rest Duration</Text>
-                        <TouchableOpacity style={styles.durationButton} onPress={onPressDuration}>
-                            <View style={styles.durationIcon}>
-                                <MaterialCommunityIcons name="motion-pause-outline" size={ms(iconSize.md)} color={colors.button} />
-                            </View>
-                            <View style={styles.durationTextContainer}>
-                                <Text style={styles.durationValue}>3m30s</Text>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
+                    <DurationButton
+                        onPressDuration={onPressDuration}
+                        title={"Rest Duration"}
+                        value={"3m30s"}
+                        iconName={"motion-pause-outline"} />
 
-                    <View style={styles.duration}>
-                        <Text style={styles.durationTitle}>Exercise Duration</Text>
-                        <TouchableOpacity style={styles.durationButton}>
-                            <View style={styles.durationIcon}>
-                                <MaterialCommunityIcons name="motion-play-outline" size={ms(iconSize.md)} color={colors.button} />
-                            </View>
-                            <View style={styles.durationTextContainer}>
-                                <Text style={styles.durationValue}>3m30s</Text>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
+                    <DurationButton
+                        onPressDuration={onPressDuration}
+                        title={"Exercise Duration"}
+                        value={"3m30s"}
+                        iconName={"motion-play-outline"} />
                 </View>
 
                 {/* set list */}

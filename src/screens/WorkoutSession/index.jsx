@@ -18,6 +18,10 @@ const WorkoutSession = ({ navigation }) => {
         navigation.goBack()
     }
 
+    const onStart = () => {
+        navigation.navigate("StartWorkout")
+    }
+
     const toggleEditDeleteModal = () => {
         setEditDeleteModal(!editDeleteModal)
     }
@@ -73,7 +77,7 @@ const WorkoutSession = ({ navigation }) => {
                     <ExerciseItem />
                 </View>
                 {/* start button */}
-                <TouchableOpacity style={styles.startButton}>
+                <TouchableOpacity style={styles.startButton} onPress={onStart}>
                     <Text style={styles.startButtonTitle}>Start</Text>
                 </TouchableOpacity>
             </View>

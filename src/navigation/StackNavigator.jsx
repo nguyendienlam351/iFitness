@@ -4,20 +4,46 @@ import BottomTabsNavigator from './BottomTabsNavigator';
 import CreateWorkoutSession from '../screens/CreateWorkoutSession';
 import Exercise from '../screens/Exercise';
 import CreateExercise from '../screens/CreacteExercise';
+import StartWorkout from '../screens/StartWorkout';
 
 const Stack = createNativeStackNavigator();
 
+const ScreenList = [
+  {
+    name: "BottomTabsNavigator",
+    component: BottomTabsNavigator
+  },
+  {
+    name: "WorkoutSession",
+    component: WorkoutSession
+  },
+  {
+    name: "CreateWorkoutSession",
+    component: CreateWorkoutSession
+  },
+  {
+    name: "Exercise",
+    component: Exercise
+  },
+  {
+    name: "CreateExercise",
+    component: CreateExercise
+  },
+  {
+    name: "StartWorkout",
+    component: StartWorkout
+  },
+]
+
 const StackNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={{
-      headerShown: false,
-      orientation: 'portrait'
-    }}>
-      <Stack.Screen name="BottomTabsNavigator" component={BottomTabsNavigator} />
-      <Stack.Screen name="WorkoutSession" component={WorkoutSession} />
-      <Stack.Screen name="CreateWorkoutSession" component={CreateWorkoutSession} />
-      <Stack.Screen name="Exercise" component={Exercise} />
-      <Stack.Screen name="CreateExercise" component={CreateExercise} />
+    <Stack.Navigator
+      // initialRouteName='StartWorkout' 
+      screenOptions={{
+        headerShown: false,
+        orientation: 'portrait',
+      }}>
+      {ScreenList?.map((item) => <Stack.Screen key={item.name} name={item.name} component={item.component} />)}
     </Stack.Navigator>
   );
 }
