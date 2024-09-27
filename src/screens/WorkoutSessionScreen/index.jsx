@@ -10,7 +10,7 @@ import { ms } from 'react-native-size-matters'
 import EditDeleteModal from '../../components/EditDeteteModal'
 import YesNoModal from '../../components/YesNoModal'
 
-const WorkoutSession = ({ navigation }) => {
+const WorkoutSessionScreen = ({ navigation }) => {
     const [editDeleteModal, setEditDeleteModal] = useState(false);
     const [deleteModal, setDeleteModal] = useState(false);
 
@@ -100,4 +100,4 @@ const WorkoutSession = ({ navigation }) => {
     )
 }
 
-export default WorkoutSession
+export default WorkoutSessionScreen

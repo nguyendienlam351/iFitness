@@ -7,7 +7,7 @@ import { ms } from 'react-native-size-matters'
 import { iconSize } from '../../constants/dimensions'
 import { colors } from '../../constants/colors'
 
-const CreateExercise = ({ navigation }) => {
+const CreateExerciseScreen = ({ navigation }) => {
     const [name, setName] = useState('');
     const [keyboardStatus, setKeyboardStatus] = useState(null);
 
@@ -66,4 +66,4 @@ const CreateExercise = ({ navigation }) => {
     )
 }
 
-export default CreateExercise
+export default CreateExerciseScreen

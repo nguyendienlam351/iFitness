@@ -9,7 +9,7 @@ import SearchHeader from '../../components/SearchHeader'
 import WorkoutSessionItem from '../../components/WorkoutSessionItem'
 import SortWorkoutSessionModal from '../../components/SortWorkoutSessionModal'
 
-const SearchWorkoutSession = ({ navigation }) => {
+const SearchWorkoutSessionScreen = ({ navigation }) => {
     const [searchValue, setSearchValue] = useState("");
     const [sortModal, setSortModal] = useState(false);
     const [sortValue, setSortValue] = useState(1);
@@ -61,4 +61,4 @@ const SearchWorkoutSession = ({ navigation }) => {
     )
 }
 
-export default SearchWorkoutSession
+export default SearchWorkoutSessionScreen

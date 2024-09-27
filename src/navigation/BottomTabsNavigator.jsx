@@ -3,9 +3,9 @@ import HomeScreen from '../screens/HomeScreen';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { colors } from '../constants/colors';
 import { StyleSheet } from 'react-native';
-import { s, vs, ms } from 'react-native-size-matters';
+import { vs, ms } from 'react-native-size-matters';
 import { iconSize } from '../constants/dimensions';
-import SearchWorkoutSession from '../screens/SearchWorkoutSession';
+import SearchWorkoutSessionScreen from '../screens/SearchWorkoutSessionScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,7 +21,7 @@ const BottomTabsNavigator = () => {
                 tabBarStyle: styles.tabBarStyle,
             }}>
             <Tab.Screen
-                name="Home"
+                name="HomeScreen"
                 component={HomeScreen}
                 options={{
                     tabBarIcon: ({ color, size }) => (
@@ -29,8 +29,8 @@ const BottomTabsNavigator = () => {
                     ),
                 }} />
             <Tab.Screen
-                name="History"
-                component={SearchWorkoutSession}
+                name="SearchWorkoutSessionScreen"
+                component={SearchWorkoutSessionScreen}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <MaterialCommunityIcons name="view-list" color={color} size={ms(iconSize.md)} />

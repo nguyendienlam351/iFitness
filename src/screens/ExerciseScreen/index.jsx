@@ -11,7 +11,7 @@ import SetItem from '../../components/SetItem'
 import EditDeleteModal from '../../components/EditDeteteModal'
 import DurationButton from '../../components/DurationButton'
 
-const Exercise = ({ navigation }) => {
+const ExerciseScreen = ({ navigation }) => {
     const [durationModal, setDurationModal] = useState(false);
     const [editDeleteModal, setEditDeleteModal] = useState(false);
 
@@ -89,4 +89,4 @@ const Exercise = ({ navigation }) => {
     )
 }
 
-export default Exercise
+export default ExerciseScreen

@@ -9,7 +9,7 @@ import SetItem from '../../components/SetItem'
 import Header from '../../components/Header'
 import DurationButton from '../../components/DurationButton'
 
-const StartWorkout = () => {
+const StartWorkoutScreen = () => {
     return (
         <View style={styles.container}>
             {/* header */}
@@ -84,4 +84,4 @@ const StartWorkout = () => {
     )
 }
 
-export default StartWorkout
+export default StartWorkoutScreen

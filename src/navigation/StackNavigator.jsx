@@ -1,10 +1,10 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import WorkoutSession from '../screens/WorkoutSession';
 import BottomTabsNavigator from './BottomTabsNavigator';
-import CreateWorkoutSession from '../screens/CreateWorkoutSession';
-import Exercise from '../screens/Exercise';
-import CreateExercise from '../screens/CreacteExercise';
-import StartWorkout from '../screens/StartWorkout';
+import WorkoutSessionScreen from '../screens/WorkoutSessionScreen';
+import CreateWorkoutSessionScreen from '../screens/CreateWorkoutSessionScreen';
+import ExerciseScreen from '../screens/ExerciseScreen';
+import CreateExerciseScreen from '../screens/CreacteExerciseScreen';
+import StartWorkoutScreen from '../screens/StartWorkoutScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,24 +14,24 @@ const ScreenList = [
     component: BottomTabsNavigator
   },
   {
-    name: "WorkoutSession",
-    component: WorkoutSession
+    name: "WorkoutSessionScreen",
+    component: WorkoutSessionScreen
   },
   {
-    name: "CreateWorkoutSession",
-    component: CreateWorkoutSession
+    name: "CreateWorkoutSessionScreen",
+    component: CreateWorkoutSessionScreen
   },
   {
-    name: "Exercise",
-    component: Exercise
+    name: "ExerciseScreen",
+    component: ExerciseScreen
   },
   {
-    name: "CreateExercise",
-    component: CreateExercise
+    name: "CreateExerciseScreen",
+    component: CreateExerciseScreen
   },
   {
-    name: "StartWorkout",
-    component: StartWorkout
+    name: "StartWorkoutScreen",
+    component: StartWorkoutScreen
   },
 ]
 
